@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none; 
+    color: #fff; 
+}
+
+body {
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background-image: url(/images/joseph-pearson-jxgJUpL-SQg-unsplash-min.png);
+    min-width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bng__img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(19,19,23,1) -60.90%, rgba(65,66,99,0.09147408963585435) 100%);
+    opacity: .5;
+    z-index: 0;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+}
+.header, .main {
+    position: relative;
+}
+.header-content {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    color: #fff;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: #E7E7F2;
+    opacity: 0.4;
+    backdrop-filter: blur(60px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.menu, .register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    font-size: 18px;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+   
+}
+
+.register {
+    width: 214px;
+}
+
+.main-content {
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 66px;
+    letter-spacing: 0.01em;
+}
+.describe {
+    font-size: 20px;
+    opacity: 0.8;
+}
+.main-left {
+    margin-top: 213px;
+}
+.main-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-64%);
+    right: 0;
+    width: 570px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70px);
+    border-radius: 16px 0px 0px 16px;
+}
+
+.describe {
+    margin-top: 23px;
+    margin-bottom: 165px;
+    width: 347px;
+}
+
+.card__img {
+    width: 285px;
+    height: 400px;
+}
+
+.next {
+    font-size: 20px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.left-card {
+    padding-left: 36px;
+}
+
+.card__desc {
+    margin: 36px 0 87px 0;
+    font-size: 42px;
+}
+
+.booking-block {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70px);
+    border-radius: 20px 20px 0px 0px;
+    padding: 40px 48px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 0 20px;   
+}
+.booking__title {
+    position: absolute;
+    top: 10px;
+    left: 51px;
+    font-size: 18px;
+}
+.search__btn {
+    padding: 20px 50px;
+    background: #91CB82;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.booking_param {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1.2fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    border: 1px solid rgb(231, 231, 242, .3);
+    box-sizing: border-box;
+    border-radius: 10px;  
+    margin-top: 10px;
+}
+
+.accomodation, .check__in, .check__out {
+    border-right: 1px solid rgb(231, 231, 242, .3);
+}
+
+.guests, .accomodation, .check__in {
+    padding: 10px 0 10px 40px;
+}
+
+
+
+.check__out {
+    padding: 10px 0 10px 20px;
+}
+
+.book__title {
+    font-size: 14px;
+    line-height: 14px;
+    color: #E7E7F2;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+.book__data {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    position: relative;
+}
+
+.book__data::before {
+    position: absolute;
+    top: -58%;
+    left: -30px;
+}
+
+.icon1::before {
+    content: url(/images/home.svg);
+}
+.icon2::before {
+    content: url(/images/calendar.svg);
+}
+.icon3::before {
+    content: url(/images/person.svg);
+}
+
+.icon3::after {
+    content: url(/images/dropdown.svg);
+    position: absolute;
+    top: -10px;
+    right: 13px;
+}
